@@ -53,7 +53,7 @@ source_streams:
 Another frequently requested use case is triggering a home automation process when a chat comment is received after a certain delay of silence. Like the previous use-case, this one is handy for newer streamers who dont want to miss new chat messages. This can be used instead of, or in addition to, the sound use case above.
 
 ** Here is a sample config.yaml for a REST Endpoint Use Case Only **
-In this use case, we are communicating with a local Home Assistant server to trigger an automation named "alert_comment". This particular automation makes our nanoleaf light flash a few different colors to alert us of the new comment.
+In this use case, we are communicating with a local Home Assistant server to trigger an automation named "alert_comment". This particular automation makes our nanoleaf light flash a few different colors to alert us to the new comment.
 
 ```
 rest_services:
