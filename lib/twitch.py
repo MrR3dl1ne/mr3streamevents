@@ -4,18 +4,17 @@ from datetime import datetime
 
 twitch_fqdn = 'irc.chat.twitch.tv'
 twitch_port = 6667
-twitch_token = 'oauth:pb93u2nbfbh08ix2o7jyorhp86afkw'
 
 class twitch_class():
     
-    def __init__(self, stream_name):
+    def __init__(self, stream_name, api_token, username):
         
         stream_name=stream_name.lower()
         
         self.sock = socket.socket()
         self.sock.connect((twitch_fqdn, twitch_port))
-        self.sock.send(f"PASS {twitch_token}\n".encode('utf-8'))
-        self.sock.send(f"NICK watchinu\n".encode('utf-8'))
+        self.sock.send(f"PASS {api_token}\n".encode('utf-8'))
+        self.sock.send(f"NICK {username}\n".encode('utf-8'))
         self.sock.send(f"JOIN #{stream_name}\n".encode('utf-8'))
         
         # Define some globals for comment activity

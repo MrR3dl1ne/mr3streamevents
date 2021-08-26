@@ -26,7 +26,10 @@ if __name__ == '__main__':
         for stream in config_file['source_streams']:
             if stream['provider'].lower() == 'twitch':
                 if twitch_provider is None:
-                    twitch_provider = twitch_class(stream['provider_settings']['stream_name'])
+                    twitch_provider = twitch_class(
+                        stream['provider_settings']['stream_name'],
+                        stream['provider_settings']['api_token'],
+                        stream['provider_settings']['username'])
                 
                 twitch_provider.check_for_events(stream['provider_settings']['events'])
     
