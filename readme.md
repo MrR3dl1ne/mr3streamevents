@@ -116,3 +116,8 @@ source_streams:
           endpoint: alert_comment
 
 ```
+
+### Acknowledgements
+
+A big thank you to [sheuronazxe](https://github.com/sheuronazxe). Without their excellent work on [chatding](https://github.com/sheuronazxe/chatding), it would made it much more difficult to get started on this.
+
