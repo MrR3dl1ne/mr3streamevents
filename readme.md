@@ -6,6 +6,9 @@ This libary contains a range of functionality to help streamers of all types. Th
 
 At the time of writing this, the only actions supported are sending a request to a remote REST endpoint (like Home Assistant) or playing a variety of sounds. More actions will be coming shortly as we build on this base. Using the REST integration would allow a streamer to execution automations in their Home Assistant or other automation software when events occur, like follows, subs and comments.
 
+[MrR3dl1ne](https://www.youtube.com/channel/UC6E9l_8vF3cODWxpvRwCNWg)
+
+
 ## Prequisites
 
 The only prerequisite is to have python 3.7+ installed
