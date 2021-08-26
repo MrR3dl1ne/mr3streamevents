@@ -9,7 +9,7 @@ source_streams:
 - provider: twitch
   provider_settings:
     stream_name: djmissshelton
-    api_token: 'oauth:pb93u2nbfbh08ix2o7jyorhp86afkw'
+    api_token: ''
     username: 'watchinu'
     events:
     - type: comment_activity
