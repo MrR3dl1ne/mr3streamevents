@@ -8,9 +8,9 @@ rest_services:
 source_streams:
 - provider: twitch
   provider_settings:
-    stream_name: djmissshelton
+    stream_name: mrr3dl1ner
     api_token: ''
-    username: 'watchinu'
+    username: watchinu
     events:
     - type: comment_activity
       settings:
